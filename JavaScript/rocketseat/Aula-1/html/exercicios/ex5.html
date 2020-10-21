@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ex 5</title>
+    </head>
+
+    <body>
+        <script>
+            function mostrar(users){
+                console.log(users)
+                for (let value of users ){ //caso precise pegar informacoes do array utilize let value of ou const value of
+                    console.log('O '+ users + ' possui as habilidades: '  )
+                }
+                //console.log('O '+ users.nome + ' possui as habilidades: ' + users.join());
+            }
+
+            var usuarios = [
+                {
+                    nome : "Diogo",
+                    habilidades : ['Javascript', 'ReactJs', 'Redux']
+                },
+                {
+                    nome : "Gabriel",
+                    habilidades : ['VueJs','Ryby','Elixir']
+                }
+            ]
+
+            mostrar(usuarios);
+        </script>
+    </body>
+</html>

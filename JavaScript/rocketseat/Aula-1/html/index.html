@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Js</title>
+    </head>
+
+    <body>
+        <!-- Variaveis -->
+        <script>
+            console.log('Hellou word')/* Mostrar log no console do nvegador */
+            var name = "Carlos Gatao"; /* String */
+            var idade = 32; /* Inteiro */
+            var peso = 54.30; /* Float */
+            var humano = true;  /* Buleano V=true/ =false */
+
+            var alunos = ["Carlos","Pedro","Eduardo"]; /* Vetor */
+            /* objetos = variaveis q guardao mais de um valor referente ao um objeto */
+            var aluno = {
+                nome : alunos[2],/* utilizamos o vetor pra trazer o segundo nome */
+                idade: 14,
+                peso: 60.703,
+                humano: true
+            };
+
+            console.log(alunos)
+            console.log(aluno.nome) /* Nome do obejto. o que procura do objeto */
+        </script>
+        <!-- Conta -->
+        <script>
+            var x = 10, y =5;
+            x+= x + 20;
+
+            var resultado = x + y;
+
+            console.log(resultado)
+        </script>
+        <!-- Funcoes -->
+        <script>
+            function calculadora(num1,num2){
+                var result = num1 + num2;
+
+                return result;
+            }
+
+            var result2 = calculadora(4,5); /* declarar outra variavel pra recerver o valor da funcao var variavel = funcao (parametro1,parametro2) */
+            console.log(result2);
+        </script>
+        <!-- Condicoes -->
+        <script>
+            function retornaSexo (sexo){
+            // f ou m
+                // if (sexo === 'M'){ /* 3 iguais para ferificar o valor e o tipo */
+                //     return 'Masculino';
+                // }
+                // else if (sexo === 'F'){
+                //     return 'Feminino';
+                // }
+                // else{
+                //     return 'Sexo indefinido'
+                // }
+
+                switch(sexo){
+                    case 'M':
+                        return 'Masculino';
+                    case 'F':
+                        return 'Feminino';
+                    default:
+                        return 'outro';
+                }
+            }
+
+            var resultado = retornaSexo('dsdsd')
+            console.log(resultado);
+        </script>
+        <!-- Operadores logicos -->
+        <script>
+            // AND && / OR || / NOT !=
+
+            var sexo = 'M', ideade = 18;
+
+            if (sexo === 'M' || sexo >= 'F' && idade >= 18){
+                console.log('Liberado 1')
+            }
+            if (sexo='F' && idade >= 17){
+                console.log('Liberdo 2')
+            }
+            if (sexo !== 'F' && sexo !== 'M'){
+                console.log('Digite M ou F')
+            }
+        </script>
+        <!-- Condicao ternaria -->
+        <script>
+        sexo2 = 'M';
+
+        /* Subistitur toda essa condicao por
+        if(sexo2 = 'm'){
+            console.log('Homi')
+        }else{
+            console.log('Muie')
+        } */
+
+        var retorno = (sexo2 === 'M') ? 'Masculino' : 'Feminino';
+        console.log(retorno);
+        </script>
+        <!-- Estrutura de repeticao -->
+        <script>
+            // for / while
+
+            for(var i =0; i <=10; i++){
+                console.log(i);
+            }
+
+            var j = 0;
+            while (j <= 10){
+                console.log(j)
+                j++;
+            }
+        </script>
+        <!-- Intervalo e timeout -->
+        <script>
+            function exibirAlgo(){
+                console.log('Hellou Word');
+            }
+
+            //setInterval(exibirAlgo,  1000);/* definir um intervalo para execuxao de algo */
+            setTimeout(exibirAlgo, 3000); /* So sera exibido uma unica vez porem depois de um intervalo de tempo (1s = 1000) */
+        </script>
+    </body>
+</html>

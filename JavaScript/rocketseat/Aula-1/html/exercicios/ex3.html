@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ex 3</title>
+    </head>
+
+    <body>
+        <script>
+            function Habilidade(teste){
+                if (teste.indexOf('Angular') >= 0){ //indesOf vai ter todo Array/Vetor, se o resultado for maior/igual q 0 ele encontrou o valor se for menor q 0 o valor n foi encontrado
+                    console.log(true);
+                }else{
+                    console.log(false);
+                }
+            }
+
+            var skill = ["Angular","Java","c#","node.js","Javascript"];
+            Habilidade(skill);
+        </script>
+
+        <script>
+            function dev(linguagem,aprender){
+                if(linguagem.indexOf(aprender) < 0){
+                    liguagensApren.push(aprender);
+                    console.log('Agora vc sabe as linguagens ' + liguagensApren);
+
+                }else
+                    console.log('Vc ja sabe a linguagem ' + aprender);
+            }
+
+            var liguagensApren = ['Java','C#','JavaScript','Angular'];
+            dev (liguagensApren,'TypeScript');
+        </script>
+    </body>
+</html>
