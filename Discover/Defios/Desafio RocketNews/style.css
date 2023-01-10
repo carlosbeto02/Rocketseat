@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--body-bg-color);
+}
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "a b";
+    grid-template-columns: 0.9fr 1.1fr;
+}
+
+.l-a{
+    grid-area: a;
+}
+
+.l-b{
+    grid-area: b;
+}
+
+.logo{
+    height: 94px;
+    width: 389px;
+
+    margin: 50px 30px;
+}
+
+h2{
+    margin: 62px 0px 9px 36px;
+
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+
+    color: var(--title-color);
+}
+
+p{
+    font-family: 'League Spartan', sans-serif;
+    margin: 0px 0px 9px 36px ;
+    color: hsl(0, 0%, 100%, 60%);
+    font-size: 17px;
+    font-weight: 400px;
+    width: 655px;
+    line-height: 19px;
+}
+
+p b{
+    color: white;
+    font-weight: 700;
+}
+
+form{
+    margin: 41px 36px 50px 36px;
+}
+
+form label {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--form-color);
+}
+
+.sendLine{
+    position: absolute;
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+}
+
+form input {
+    padding: 24px 780px 24px 10px;
+    background-color: white;
+    font-size: 12px;
+    font-family: 'Work Sans', sans-serif;
+
+    box-shadow:5px 0px 0px 0px var(--title-color) inset;
+    border: none;
+    outline: 0;
+}
+
+form button{
+    padding: 17.5px 17.5px;
+    background-color: var(--bg-button-color);
+    border:none;
+
+}
+form button img{
+    background-color: var(--bg-button-color);
+}
+
+.readFirst{
+    margin: 130px 36px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+
+    border: none;
+    color: var(--bg-button-color);
+
+    font-family: 'League Spartan', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.l-b {
+    background-color: #04D361;
+    height: 100vh;
+    background-image: url(assets/read_news.jpg);
+    background-size: cover;
+    background-position: right;
+}

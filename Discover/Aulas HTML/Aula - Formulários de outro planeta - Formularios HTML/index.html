@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="input-contantc">
+        <fieldset>
+            <legend>Contanto</legend>
+            <label for="">Name:</label>
+            <input type="text">
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+
+    <!-- <label for="">
+        Nome Completo
+        <input type="text">
+    </label> --> 
+    <!-- ou -->
+
+    <label for="nome">Nome Completo</label>
+    <input id="nome" value="lembrete" type="text">
+    
+    <!-- Atributos comuns do Button: Type -->
+    <button type="submit">Enviar</button>
+    <button type="button">Enviar</button>
+    <button type="reset"> Limpar</button>
+
+    <!-- Data List -->
+    <input 
+    type="text" 
+    list="frutsdata" 
+    placeholder="Escolha uma fruta"/>
+
+    <datalist id="frutsdata">
+        <option>Aplle</option>
+        <option>Banana</option>
+        <option>Pera</option>
+        <option>Abacaxi</option>
+    </datalist>
+
+    <input type="color" list="colorid" placeholder="Escolha uma cor">
+
+    <datalist id="colorid">
+        <option>#ff0000</option>
+        <option>#00ff00</option>
+        <option>#0000ff</option>
+    </datalist>
+
+    <input type="email" list="emailid" placeholder="Escolha um email">
+    <datalist id="emailid">
+        <option>maria@gmail.com</option>
+        <option>joao@gmail.com</option>
+        <option>beto@gmail.com</option>
+    </datalist>
+
+    <!-- <input> atributos comuns (type=)
+    
+        -autocolpete
+        -outofocus
+        -disable
+        -readonly (quase todos)
+        -value
+        -form (quase todos)
+        -name
+        -required (qause todos)
+        -placeholder
+    -->
+    <label for="email-pessoal">Email</label>
+    <input id="email-pessoal" type="email">
+
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="userName">Nome</label><br>
+            <input type="text" name="NomeDoUsuario" id="userName" placeholder="Digite seu nome"><br><br>
+    
+            <label for="userEmail">Email</label><br>
+            <input type="email" name="EmailDoUsuario" id="userEmail" placeholder="Digite seu email"><br><br>
+    
+            <label for="userMessage">Mensagem</label><br>
+            <textarea name="MensagemDoUsuario" id="userMessage" cols="19" rows="10" placeholder="Digite uma mensagem"></textarea><br><br>
+    
+            <button >Enviar</button><br>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
