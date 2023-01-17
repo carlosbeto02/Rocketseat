@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    background-color: bisque;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline:10rem;
+    margin-top: 30px;
+
+    text-transform: uppercase;
+}
+h1{
+    font-size: 3rem;
+}
+
+nav{
+    font-size: 1.6rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+
+    align-items: center;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+ul li:nth-child(5){
+    color: aliceblue;
+    background-color: blue;
+    padding: 10px 12px;
+    border-radius: 8px;
+    text-transform: none;
+}
