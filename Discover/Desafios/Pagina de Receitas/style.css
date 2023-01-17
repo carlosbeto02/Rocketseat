@@ -47,8 +47,11 @@ figure{
     width: 95%;
 }
 figure figcaption{
-    margin-top: .5rem;
-    margin-left: 80%;
+    margin-top: .9rem;
+    
+    display: flex;
+    justify-content: end;
+
     font-size: 1.2rem;
     color: var(--text-footer-and-legend);
     opacity: 0.6;
